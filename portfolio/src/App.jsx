@@ -23,11 +23,9 @@ function App() {
                 <About />
               </section>
               <section>
-                <Header />
                 <Stacks />
               </section>
               <section>
-                <Header />
                 <Projects />
               </section>
             </>
