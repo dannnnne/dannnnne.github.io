@@ -1,6 +1,7 @@
 import Hello from './components/hello';
 import Header from './components/header';
 import About from './components/about';
+import Activity from './components/activity';
 import Stacks from './components/stacks';
 import Projects from './components/projects';
 import ProjectDetail from './components/projectDetail';
@@ -21,6 +22,7 @@ function App() {
               <section>
                 <Header />
                 <About />
+                <Activity />
               </section>
               <section>
                 <Stacks />
