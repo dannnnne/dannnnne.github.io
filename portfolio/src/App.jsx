@@ -1,10 +1,11 @@
-import Hello from './components/hello';
+import Hello from './components/hello/hello';
 import Header from './components/header';
-import About from './components/about';
-import Activity from './components/activity';
-import Stacks from './components/stacks';
-import Projects from './components/projects';
-import ProjectDetail from './components/projectDetail';
+import About from './components/about/about';
+import Stacks from './components/stacks/stacks';
+import Projects from './components/project/projects';
+import ProjectDetail from './components/project/projectDetail';
+
+import './index.css';
 
 import { Routes, Route } from 'react-router-dom';
 
@@ -22,7 +23,6 @@ function App() {
               <section>
                 <Header />
                 <About />
-                <Activity />
               </section>
               <section>
                 <Stacks />

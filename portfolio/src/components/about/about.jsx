@@ -1,8 +1,9 @@
-import MyImg from '../assets/me.jpg';
+import MyImg from '../../assets/me.jpg';
+import Activity from './activity';
 
 const About = () => {
   return (
-    <div className="bg-[rgb(241,239,236)] h-[1024px] ml-[20%] flex flex-col items-center">
+    <div className="bg-[rgb(241,239,236)] min-h-screen ml-[20%] flex flex-col items-center">
       <div>
         <h1 className="text-[25px] sm:text-[40px] mx-5 2xl:ml-10 font-black border-b-black h-[60px] mt-20 mb-3">
           ABOUT
@@ -59,6 +60,7 @@ const About = () => {
           </li>
         </ul>
       </div>
+      <Activity />
     </div>
   );
 };
