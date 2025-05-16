@@ -1,5 +1,4 @@
 import MyImg from '../../assets/me.jpg';
-import Activity from './activity';
 
 const About = () => {
   return (
@@ -60,7 +59,16 @@ const About = () => {
           </li>
         </ul>
       </div>
-      <Activity />
+
+      <div className="py-auto border-b-2 py-5 px-3 border-[rgb(214,214,214)] outline-none w-[80%] xl:w-[800px]">
+        <h1 className="text-2xl font-bold">ACTIVITY</h1>
+        <div className="mt-4">
+          <p className="text-sm sm:text-xl ">9oormthon UNIV 4기</p>
+          <p className="text-sm sm:text-[15px] text-gray-500 mt-1">
+            2025.03 ~ ing
+          </p>
+        </div>
+      </div>
     </div>
   );
 };
