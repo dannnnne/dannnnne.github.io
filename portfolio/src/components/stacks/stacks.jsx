@@ -1,18 +1,18 @@
-import TS from '../assets/stacks/TS.png';
-import JS from '../assets/stacks/JS.jpg';
-import HTML from '../assets/stacks/HTML.png';
-import REACT from '../assets/stacks/React.png';
-import CSS from '../assets/stacks/CSS.jpg';
-import TWCSS from '../assets/stacks/TAILWIND.png';
-import GITHUB from '../assets/github.png';
-import SLACK from '../assets/stacks/SLACK.png';
-import DISCORD from '../assets/stacks/DISCORD.png';
-import FIGMA from '../assets/stacks/FIGMA.png';
-import NOTION from '../assets/stacks/NOTION.png';
+import TS from '../../assets/stacks/TS.png';
+import JS from '../../assets/stacks/JS.jpg';
+import HTML from '../../assets/stacks/HTML.png';
+import REACT from '../../assets/stacks/React.png';
+import CSS from '../../assets/stacks/CSS.jpg';
+import TWCSS from '../../assets/stacks/TAILWIND.png';
+import GITHUB from '../../assets/github.png';
+import SLACK from '../../assets/stacks/SLACK.png';
+import DISCORD from '../../assets/stacks/DISCORD.png';
+import FIGMA from '../../assets/stacks/FIGMA.png';
+import NOTION from '../../assets/stacks/NOTION.png';
 
 const Stacks = () => {
   return (
-    <div className="bg-[rgb(241,239,236)] h-[1024px] ml-[20%] flex flex-col items-center">
+    <div className="bg-[rgb(241,239,236)] min-h-screen ml-[20%] flex flex-col items-center">
       <div>
         <h1 className="text-[25px] sm:text-[40px] mx-5 2xl:ml-10 font-black border-b-black h-[60px] mt-20 mb-3">
           STACKS
@@ -20,8 +20,10 @@ const Stacks = () => {
       </div>
       <div className="flex flex-col justify-center  border-b-2 border-t-2 px-3 border-[rgb(214,214,214)] outline-none xl:w-[800px] w-[80%]">
         <div className="flex border-b-2 border-[rgb(214,214,214)] py-10">
-          <h2 className="text-2xl px-4 font-bold w-[30%]">Language</h2>
-          <div className="ml-4 flex justify-center items-center gap-3">
+          <h2 className="text-lg sm:text-2xl px-4 font-bold w-[30%]">
+            Language
+          </h2>
+          <div className="ml-4 flex justify-center items-center gap-3 text-xs sm:text-lg whitespace-nowrap">
             <p>
               <img src={TS} className="w-6 inline" />
               TypeScript
@@ -33,8 +35,10 @@ const Stacks = () => {
           </div>
         </div>
         <div className="flex border-b-2 border-[rgb(214,214,214)] py-10">
-          <h2 className="text-2xl px-4 font-bold w-[30%]">Front-End</h2>
-          <div className="ml-4 flex flex-col gap-2">
+          <h2 className=" text-lg whitespace-nowrap sm:text-2xl px-4 font-bold w-[30%]">
+            Front-End
+          </h2>
+          <div className="ml-6 flex flex-col gap-2 text-xs sm:text-lg whitespace-nowrap">
             <p className="flex ">
               <img src={HTML} className="w-5 inline" />
               &nbsp;HTML&nbsp;&nbsp;&nbsp;
@@ -50,8 +54,8 @@ const Stacks = () => {
           </div>
         </div>
         <div className="flex outline-none border-none py-10">
-          <h2 className="text-2xl px-4 font-bold w-[30%]">Tools</h2>
-          <div className="ml-4 flex flex-col gap-2">
+          <h2 className="text-lg sm:text-2xl px-4 font-bold w-[30%]">Tools</h2>
+          <div className="ml-6 flex flex-col gap-2 text-xs sm:text-lg whitespace-nowrap">
             <p>
               <img src={GITHUB} className="w-6 inline" />
               &nbsp;Github&nbsp;&nbsp;&nbsp;{' '}

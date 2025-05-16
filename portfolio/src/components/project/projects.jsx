@@ -1,6 +1,6 @@
 const Projects = () => {
   return (
-    <div className="bg-[rgb(241,239,236)] h-[1024px] ml-[20%]">
+    <div className="bg-[rgb(241,239,236)] min-h-screen ml-[20%]">
       <h1 className="sm:text-[25px] mx-5 2xl:ml-10 font-black md:text-[30px] xl:text-[40px] xl:h-[60px]">
         PROJECTS
       </h1>
