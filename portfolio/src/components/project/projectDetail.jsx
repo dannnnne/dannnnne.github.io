@@ -5,7 +5,7 @@ const ProjectDetail = () => {
   const params = useParams();
   // {params.id}번 프로젝트 입니다.
   return (
-    <div className="bg-[rgb(241,239,236)]">
+    <div className="bg-[hsl(219,37%,17%)] ">
       <div className="w-[80vw] bg-[rgb(216,217,218)] h-[90vh] mx-auto my-[3%] rounded-xl shadow-2xl flex flex-col justify-between border border-none">
         <div className="border-b-2 border-[rgb(177,177,177)] h-20 flex px-3 items-center">
           <img src={Arrow} className="w-10 h-10" />
