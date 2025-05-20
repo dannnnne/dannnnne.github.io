@@ -1,8 +1,13 @@
 import MyImg from '../../assets/me.jpg';
+import { motion } from 'framer-motion';
 
 const About = () => {
   return (
-    <div
+    <motion.div
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 100, y: 0 }}
+      transition={{ duration: 0.8, ease: 'easeOut' }}
+      viewport={{ once: true, amount: 0.4 }}
       className="bg-[rgb(241,239,236)] min-h-screen sm:ml-[20%] flex flex-col items-center"
       id="About"
     >
@@ -72,7 +77,7 @@ const About = () => {
           </p>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

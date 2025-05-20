@@ -1,6 +1,12 @@
+import { motion } from 'framer-motion';
+
 const Projects = () => {
   return (
-    <div
+    <motion.div
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 100, y: 0 }}
+      transition={{ duration: 1, ease: 'easeOut' }}
+      viewport={{ once: true, amount: 0.1 }}
       className="bg-[rgb(241,239,236)] min-h-screen sm:ml-[20%] mb-[50px]"
       id="Projects"
     >
@@ -23,7 +29,7 @@ const Projects = () => {
           <p className="bg-white h-[30%]">설명</p>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

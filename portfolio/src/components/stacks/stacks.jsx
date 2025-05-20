@@ -10,9 +10,15 @@ import DISCORD from '../../assets/stacks/DISCORD.png';
 import FIGMA from '../../assets/stacks/FIGMA.png';
 import NOTION from '../../assets/stacks/NOTION.png';
 
+import { motion } from 'framer-motion';
+
 const Stacks = () => {
   return (
-    <div
+    <motion.div
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1, ease: 'easeOut' }}
+      viewport={{ once: true, amount: 0.2 }}
       className="bg-[rgb(241,239,236)] min-h-screen sm:ml-[20%] flex flex-col items-center"
       id="Stacks"
     >
@@ -77,7 +83,7 @@ const Stacks = () => {
         </div>
         <hr />
       </div>
-    </div>
+    </motion.div>
   );
 };
 
