@@ -3,7 +3,7 @@ import MyImg from '../../assets/me.jpg';
 const About = () => {
   return (
     <div
-      className="bg-[rgb(241,239,236)] min-h-screen ml-[20%] flex flex-col items-center"
+      className="bg-[rgb(241,239,236)] min-h-screen sm:ml-[20%] flex flex-col items-center"
       id="About"
     >
       <div>
