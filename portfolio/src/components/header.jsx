@@ -13,7 +13,7 @@ const Header = () => {
     <motion.div
       initial={{ opacity: 0, y: 0 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5, ease: 'easeOut' }}
+      transition={{ duration: 0.3, ease: 'easeOut' }}
       className={`bg-[rgb(27,38,59)] sm:w-[20%] sm:h-screen sm:fixed  sm:left-0 sm:top-[0px] sm:flex sm:flex-col sm:justify-between sm:py-5 hidden`}
     >
       <div className="mt-16 flex flex-col justify-center items-center -mb-14 ">
