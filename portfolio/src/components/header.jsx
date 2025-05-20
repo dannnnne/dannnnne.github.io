@@ -4,12 +4,18 @@ import GmailImg from '../assets/gmail.png';
 import profileImg from '../assets/hi.jpg';
 
 import { useState } from 'react';
+import { motion } from 'framer-motion';
 
 const Header = () => {
   const [hoverd, setHovered] = useState(false);
 
   return (
-    <div className="bg-[rgb(27,38,59)] w-[20%] h-screen fixed  left-0 top-[0px] flex flex-col justify-between py-5">
+    <motion.div
+      initial={{ opacity: 0, y: 0 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, ease: 'easeOut' }}
+      className={`bg-[rgb(27,38,59)] sm:w-[20%] sm:h-screen sm:fixed  sm:left-0 sm:top-[0px] sm:flex sm:flex-col sm:justify-between sm:py-5 hidden`}
+    >
       <div className="mt-16 flex flex-col justify-center items-center -mb-14 ">
         <a href="#Hello">
           <img src={profileImg} className="w-1/2 mx-auto mb-5 rounded-full" />
@@ -71,7 +77,7 @@ const Header = () => {
           )}
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
