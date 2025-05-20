@@ -1,3 +1,6 @@
+import { useLocation } from 'react-router-dom';
+import { useState, useEffect } from 'react';
+
 import Hello from './components/hello/hello';
 import Header from './components/header';
 import About from './components/about/about';
@@ -10,6 +13,23 @@ import './index.css';
 import { Routes, Route } from 'react-router-dom';
 
 function App() {
+  const location = useLocation();
+  const isProjectDetailPage = location.pathname.startsWith('/project/');
+
+  const [showHeader, setShowHeader] = useState(false);
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 380) {
+        setShowHeader(true);
+      } else {
+        setShowHeader(false);
+      }
+    };
+    window.addEventListener('scroll', handleScroll);
+
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
     <div>
       <Routes>
@@ -20,8 +40,8 @@ function App() {
               <section>
                 <Hello />
               </section>
+              {!isProjectDetailPage && showHeader && <Header />}
               <section>
-                <Header />
                 <About />
               </section>
               <section>
