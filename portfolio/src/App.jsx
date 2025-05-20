@@ -19,7 +19,7 @@ function App() {
   const [showHeader, setShowHeader] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 380) {
+      if (window.scrollY > 300) {
         setShowHeader(true);
       } else {
         setShowHeader(false);
