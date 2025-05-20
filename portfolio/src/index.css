@@ -17,7 +17,7 @@
 /* src/index.css 또는 src/App.css 등 글로벌 스타일 파일 */
 html,
 body {
-  @apply bg-[rgb(27,38,59)];
+  @apply bg-[rgb(241,239,236)];
 
   scroll-behavior: smooth;
 }
