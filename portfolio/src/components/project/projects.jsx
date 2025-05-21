@@ -9,7 +9,8 @@ import { useNavigate } from 'react-router-dom';
 const Projects = () => {
   const navigate = useNavigate();
   const onClick = (title) => {
-    navigate(`/project/${title}`);
+    const encodedTitle = encodeURIComponent(title);
+    navigate(`/project/${encodedTitle}`);
   };
 
   return (
@@ -25,14 +26,14 @@ const Projects = () => {
         PROJECTS
       </h1>
 
-      <div className="grid lg:grid-cols-2 2xl:grid-cols-3 gap-5 mx-auto md:mx-5 2xl:mx-10 mt-10 mb-10">
+      <div className="grid lg:grid-cols-2 2xl:grid-cols-3 gap-2 mx-auto md:mx-5 2xl:mx-10 mt-14 mb-10">
         <ProjectGrid
           img={HomePage}
           title={'스터디 홈페이지 만들기'}
           description={'설명'}
           time={'2025.04.02 ~ ing'}
           stacks={['React', 'TS', 'NextJS', 'tailwindCSS']}
-          onClick={() => onClick('스터디_홈페이지')}
+          onClick={() => onClick('스터디 홈페이지 만들기')}
         />
         <ProjectGrid
           img={ArtSW}
@@ -41,7 +42,7 @@ const Projects = () => {
           time={'2025.05.11 ~ ing'}
           stacks={['React', 'JS', 'TS', 'tailwindCSS']}
           onClick={() => {
-            onClick('예술적인_소프트웨어');
+            onClick('예술적인 소프트웨어');
           }}
         />
         <ProjectGrid
@@ -50,7 +51,7 @@ const Projects = () => {
           description={'설명'}
           time={'2025.05.21 ~ ing'}
           stacks={['React', 'JS', 'TS', 'tailwindCSS']}
-          onClick={() => onClick('구름톤_유니브_교내_프로젝트')}
+          onClick={() => onClick('구름톤 유니브 교내 프로젝트')}
         />
       </div>
     </motion.div>
