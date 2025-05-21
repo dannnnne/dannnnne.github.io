@@ -1,9 +1,9 @@
 const ProjectGrid = ({ img, title, description, time, stacks, onClick }) => {
   return (
-    <div>
+    <div className="transition-transform duration-300 hover:scale-110">
       <div
         onClick={onClick}
-        className="mx-auto w-[300px] h-[270px] sm:w-[350px] sm:h-[320px]  md:w-[380px] md:h-[350px] xl:w-[430px] xl:h-[400px] 2xl:w-[95%] 2xl:h-[400px] bg-[rgb(241,239,236)] flex flex-col justify-end rounded-[20px] "
+        className="mx-auto w-[260px] h-[280px] sm:w-[300px] sm:h-[340px]  md:w-[330px] md:h-[360px] xl:w-[350px] xl:h-[400px] 2xl:w-[380px] 2xl:h-[400px] bg-[rgb(241,239,236)] flex flex-col justify-end rounded-[20px] mb-5 "
       >
         <img src={img} className="w-[100%] h-[70%] rounded-t-[20px]" />
         <div className="bg-white h-[30%] border-[rgb(214,214,214)] border-t-[2px] ">
