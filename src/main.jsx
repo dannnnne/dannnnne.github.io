@@ -1,10 +1,10 @@
 import { createRoot } from 'react-dom/client';
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom'; // ✅ 여기만 바꾸면 됨
 import App from './App';
-import './index.css'; // 반드시 있어야 Tailwind 작동
+import './index.css';
 
 createRoot(document.getElementById('root')).render(
-  <BrowserRouter>
+  <HashRouter>
     <App />
-  </BrowserRouter>
+  </HashRouter>
 );

@@ -5,6 +5,7 @@ import profileImg from '../assets/hi.jpg';
 
 import { useState } from 'react';
 import { motion } from 'framer-motion';
+import { HashLink } from 'react-router-hash-link';
 
 const Header = () => {
   const [hoverd, setHovered] = useState(false);
@@ -14,15 +15,19 @@ const Header = () => {
       initial={{ opacity: 0, y: 0 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.3, ease: 'easeOut' }}
-      className={`bg-[rgb(27,38,59)] sm:w-[20%] sm:h-screen sm:fixed  sm:left-0 sm:top-[0px] sm:flex sm:flex-col sm:justify-between sm:py-5 hidden`}
+      className="bg-[rgb(27,38,59)] sm:w-[20%] sm:h-screen sm:fixed sm:left-0 sm:top-0 sm:flex sm:flex-col sm:justify-between sm:py-5 hidden"
     >
-      <div className="mt-16 flex flex-col justify-center items-center -mb-14 ">
-        <a href="#Hello">
+      <div className="mt-16 flex flex-col justify-center items-center -mb-14">
+        <HashLink smooth to="/#Hello">
           <img src={profileImg} className="w-1/2 mx-auto mb-5 rounded-full" />
-        </a>
-        <a className="text-white sm:text-xl lg:text-2xl text-sm" href="#Hello">
+        </HashLink>
+        <HashLink
+          smooth
+          to="/#Hello"
+          className="text-white sm:text-xl lg:text-2xl text-sm"
+        >
           DA EUN KIM
-        </a>
+        </HashLink>
         <p className="text-[rgb(153,153,153)] sm:text-[12px] lg:text-lg text-[9px]">
           Front-End Developer
         </p>
@@ -31,14 +36,19 @@ const Header = () => {
       <div>
         <ul className="text-white flex flex-col justify-center items-center gap-6 text-lg sm:text-2xl">
           <li className="transition-transform duration-300 hover:scale-110">
-            <a href="#About">ABOUT</a>
+            <HashLink smooth to="/#About">
+              ABOUT
+            </HashLink>
           </li>
           <li className="transition-transform duration-300 hover:scale-110">
-            <a href="#Stacks">STACKS</a>
+            <HashLink smooth to="/#Stacks">
+              STACKS
+            </HashLink>
           </li>
-
-          <li className="transition-transform duration-300 hover:scale-110 ">
-            <a href="#Projects">PROJECTS</a>
+          <li className="transition-transform duration-300 hover:scale-110">
+            <HashLink smooth to="/#Projects">
+              PROJECTS
+            </HashLink>
           </li>
         </ul>
       </div>
