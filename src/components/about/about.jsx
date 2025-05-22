@@ -1,3 +1,4 @@
+import { a } from 'framer-motion/client';
 import MyImg from '../../assets/me.jpg';
 import { motion } from 'framer-motion';
 
@@ -36,11 +37,25 @@ const About = () => {
             📤 Mail : rlaekdms901@khu.ac.kr
           </p>
           <p className="text-[13px] sm:text-[16px] my-2">
-            ✏️ Blog : https://velog.io/@da_eun_e
+            ✏️ Blog :{' '}
+            <a
+              href="https://velog.io/@da_eun_e/posts"
+              className="hover:text-[rgb(86,206,160)]"
+              target="_blank"
+            >
+              daeun_velog
+            </a>
           </p>
           <p className="my-2 text-[13px] sm:text-[16px]">
             <i className="fa-brands fa-github mr-2 "></i>
-            Github : https://github.com/daaaaaannn
+            Github :{' '}
+            <a
+              href="https://github.com/dannnnne?tab=repositories"
+              className="hover:text-gray-500"
+              target="_blank"
+            >
+              dannnnne_github
+            </a>
           </p>
         </div>
       </div>
@@ -71,7 +86,16 @@ const About = () => {
       <div className="py-auto border-b-2 py-5 px-3 border-[rgb(214,214,214)] outline-none w-[80%] xl:w-[800px]">
         <h1 className="text-2xl font-bold">ACTIVITY</h1>
         <div className="mt-4">
-          <p className="text-sm sm:text-xl ">9oormthon UNIV 4기</p>
+          <p className="text-sm sm:text-xl ">
+            <a
+              href="https://9oormthon.university/"
+              className="hover:text-sky-500"
+              target="_blank"
+            >
+              9oormthon UNIV
+            </a>{' '}
+            4기
+          </p>
           <p className="text-sm sm:text-[15px] text-gray-500 mt-1">
             2025.03 ~ ing
           </p>
